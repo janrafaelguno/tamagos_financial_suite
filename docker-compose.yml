@@ -1,0 +1,9 @@
+services:
+  finance-cms:
+    build: .
+    container_name: tamagos-finance-cms
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
